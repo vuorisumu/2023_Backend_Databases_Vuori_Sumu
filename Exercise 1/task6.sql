@@ -10,4 +10,16 @@ Valitse sarakkeille sopivat tietotyypit.
  - headline
  - review text
  - a reference to the album id which is reviewed, not null
+
+ Tässä oli myös Topias mukana tekemässä aiempien kavereiden lisäksi
 */
+
+CREATE TABLE review (
+    id INT AUTO_INCREMENT,
+    name_of_the_reviewer VARCHAR(255) NOT NULL,
+    headline VARCHAR(255),
+    review_text LONGTEXT,
+    album_id INT NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY (album_id) REFERENCES album(id)
+);

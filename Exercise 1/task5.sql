@@ -16,3 +16,18 @@ Kappaleiden tiedot on listattu alla, lisää myös ne tietokantaan.
  9. The Man Who Would Be King 8.28
  10. When the Wild Wind Blows 10.59
 */
+
+INSERT INTO album (name, year, artist_id)
+VALUES ("The Final Frontier", 2010, 1);
+
+ INSERT INTO track (name, length, track_number, album_id)
+    VALUES ("Satelite 15... The Final Frontier", "000:08:40", 1, 8),
+    ("El Dorado", "000:06:49", 2, 8),
+    ("Mother of Mercy Harris", "000:05:20", 3, 8),
+    ("Coming Home", "000:05:52", 4, 8),
+    ("The Alchemist", "000:04:29", 5, 8),
+    ("Isle of Avalon", "000:09:06", 6, 8),
+    ("Starblind", "000:07:48", 7, 8),
+    ("The Talisman", "000:09:03", 8, 8),
+    ("The Man Who Would Be King", "000:08:28", 9, 8),
+    ("When the Wild Wind Blows", "000:10:59", 10, 8);
