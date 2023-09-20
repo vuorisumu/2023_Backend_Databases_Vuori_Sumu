@@ -28,3 +28,40 @@ CREATE-lauseita ei tarvitse kirjoittaa.
 Lisää esimerkkidataa tauluihisi.
 */
 
++---------------------------------------------------------------+
+| 			Employee				|
++-------+---------------+-----------------------+---------------+
+| id	| name		| email			| supervisor_id	|
++-------+---------------+-----------------------+---------------+
+| 1	| Andy Smith	| andy@company.com	| 1		|
+| 2	| Rudy Black	| rudy@company.com	| 2		|
++-------+---------------+-----------------------+---------------+
+id: INT
+name: VARCHAR	
+email: VARCHAR	
+supervisor_id: INT
+
+
++---------------------------------------+
+|		Supervisor		|
++-------+---------------+---------------+
+| id	| name		| office_room	|
++-------+---------------+---------------+
+| 1	| Jill Jackson	| B-11		|
+| 2	| John Doe	| A-22		|
++-------+---------------+---------------+
+id: INT
+name: VARCHAR	
+office_room: VARCHAR
+
+
++-------------------------------+
+|	     Offices		|
++---------------+---------------+
+| office_room	| city		|
++---------------+---------------+
+| B-11		| New York	|
+| A-22		| San Francisco	|
++---------------+---------------+
+office_room: VARCHAR
+city: VARCHAR

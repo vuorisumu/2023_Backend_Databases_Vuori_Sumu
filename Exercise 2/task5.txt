@@ -8,3 +8,16 @@ on ongelmallinen. Sisällytä esimerkkidataa vastaukseesi. Datan tulisi selväst
 jonka normalisoimaton taulu aiheuttaa.
 */
 
++---------------+-----------------------+-----------------------+-----------------------+---------------+-------------+
+| student_id	| name			| courses		| address		| phone		| city        |
++---------------+-----------------------+-----------------------+-----------------------+---------------+-------------|
+| 0123456	| Matti Meikäläinen	| Kurssi 1		| Osoitekatu 1		| 0401234567	| Tampere     |
+|               |			| Kurssi 2		|			|		|             |
++---------------+-----------------------+-----------------------+-----------------------+---------------+-------------|
+| 0012345	| Pirkko Mallikas	| Kurssi 2		| Kissakuja 2		| 0400123455	| Helsinki    |
++---------------+-----------------------+-----------------------+-----------------------+---------------+-------------|
+| 0012345	| Pirkko Mallikas	| Kurssi 4              | Kissakuja 2		| 0400123455	| Helsinki    |
++---------------+-----------------------+-----------------------+-----------------------+---------------+-------------|
+
+Ei ole normalisoitu, koska courses-osiossa on listattu useampi kuin yksi kurssi kerrallaan. Ja jos ne listaisi erikseen, kuten Pirkon kohdalla on tehty, tulisi tuplia. Lisäksi city on riippuvainen vain osoitteesta, eikä student_id:stä, mikä tässä taulussa olisi primary key, joten osoitteen pitäisi olla omassa taulussaan. 
+Normalisoimaton taulu on ongelmallinen, koska tietoja päivitettäessä saattaisi joutua päivittämään samat tiedot useampaan paikkaan, jolloin virheitä tulee helpommin. Tietoja on paljon helpompi käsitellä, kun kaikki tiedot ovat omissa asianmukaisissa taulukoissaan. 
