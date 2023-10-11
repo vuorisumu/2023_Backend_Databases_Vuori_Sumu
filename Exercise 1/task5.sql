@@ -21,7 +21,7 @@ INSERT INTO album (name, year, artist_id)
 VALUES ("The Final Frontier", 2010, 1);
 
  INSERT INTO track (name, length, track_number, album_id)
-    VALUES ("Satelite 15... The Final Frontier", "000:08:40", 1, 8),
+    VALUES ("Satelite 15... The Final Frontier", "000:08:40", 1, LAST_INSERT_ID()),
     ("El Dorado", "000:06:49", 2, 8),
     ("Mother of Mercy Harris", "000:05:20", 3, 8),
     ("Coming Home", "000:05:52", 4, 8),

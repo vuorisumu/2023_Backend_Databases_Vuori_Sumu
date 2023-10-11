@@ -5,5 +5,5 @@ Hae kaikki kappaleet, jotka alkavat sanalla "The" ja jotka ovat vähintään min
 */
 
 SELECT * FROM track
-WHERE name LIKE "The%"
+WHERE name LIKE "The %"
 AND length >= "000:01:00";
